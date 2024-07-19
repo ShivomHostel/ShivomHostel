@@ -1,0 +1,286 @@
+
+/*  start index.php */
+.shree-logo{
+    padding-top: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.shree-logo .shivom {
+    color: #f37d21;
+}
+
+
+@media only screen and (max-width:1025px) {
+    .top-container {
+        background-color:white;
+        text-align: center;
+        width: 76%;
+        background-size: cover; 
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 570px;
+        object-fit: cover;
+    }
+    .Security-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+        padding-left: 15%;
+    }
+
+    .first-responsive{
+        text-align: center;
+        text-wrap: nowrap;
+        padding: auto;
+    }
+    .img-responsive-top{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .container-states{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-5, .col-xs-5, .col-md-7, .col-xs-7 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    .service-content1-home {
+        padding-right: 12%;
+    }
+
+    .col-md-4, .col-sm-4, .col-xs-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px 0;   
+    }
+
+    .whyusdata {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .quick{
+        text-align: center;
+    }
+}
+
+/*start contact.php */
+
+@media only screen and (max-width: 1025px) {
+    .form-group input, .form-group textarea {
+        font-size: 16px;
+    }
+    #button1 {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .form-group input, .form-group textarea {
+        font-size: 14px;
+    }
+    #button1 {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.contact-section {
+    text-align: center;
+}
+
+.whyusdata {
+    font-size: 1vw;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.quick {
+    text-align: center;
+}
+
+   
+/*end contact.php */
+
+/*start service.php */
+
+.others{
+    background: linear-gradient(to bottom, rgb(201, 145, 24), rgb(255, 85, 0));
+}
+@media only screen and (max-width:1025px) {
+    .img-responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-section{
+        /* background: linear-gradient(to right,  #fc4a1a,#f7b733); */
+        /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fQ9oTSB6XAk-BCWJN09Z2SJNu61-EUC7EA&s"); */
+        background-image: url("https://thumbs.dreamstime.com/b/abstract-smoke-gradated-orange-background-image-website-banner-cover-flyer-postcard-poster-170439472.jpg");
+        display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+    }
+    .childnwomenbg{
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+       z-index: -10;
+      }
+      
+    .Webdev{
+        background-image:none;
+        display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+      }
+      
+    .schoolstudenttracking{
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .orgdatamanagementsys{
+       
+        background-image:none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .digitrack{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .vehicletrack{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .animaltrack{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .corporate{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .mobileappd{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+   .survillience{
+       
+        background-image: none;
+       display: block;
+        background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover; 
+       background-position: center center;
+       background-size: 100%;
+   }
+      #servicemain{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        border-radius: 5vw;
+        height:auto; 
+        text-align: center;
+        color: white;
+        background-color:  gray;
+        font-size: 18px;  
+        padding: 10px;
+      }
+      .main-div{
+        background-image: linear-gradient(red, yellow);
+      }
+      .service-content{
+        font-size: 2.2vw;
+      }
+}
+
+/*end service.php */
+
+
+
+
+
+
