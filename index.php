@@ -15,6 +15,20 @@
          body {
         overflow-x: hidden;
             }
+            .quick {
+            font-size: 1.7vw;
+        }
+        .whyusdata {
+            padding-top: 1rem;
+        }
+        @media (max-width: 768px) {
+            .quick {
+                font-size: 3.5vw;
+            }
+            .whyusdata {
+                font-size: 3.5vw;
+            }
+        }
     </style>
     <script type="text/javascript">
         var sc_project=11760418; 
@@ -75,8 +89,6 @@
         </div>
     </div>
 
-    <div style="padding-top: 20px;">
-    </div>
 <!-- href="childs_image/PDF%20SHIVOM.pdf"  -->
     <div class="backgroundimg">
         <div class="background_text">
@@ -115,15 +127,16 @@
             </div>
             <br><br>
             <div class=" pt-5">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-5 col-lg-5 order-1 order-md-0 order-lg-1">
+                        <div class=" col-12 col-md-5 col-lg-5 col-xs-5 order-1 order-md-0 order-lg-1">
                         <img src="childs_image/smart-02.png" id="imagehome1" class="img-responsive" width="500" height="400">
                     </div>
-                    <div class="col-12 col-md-7 col-lg-7 order-0 order-md-1 order-lg-0 first-responsive" style="padding-left: 90px; padding-top: 30px;">
-                        <h3 class="xyz" id="empowering">
-                            <b>SMART HOSTEL</b>
+                        <div class="col-12 col-md-7 col-lg-7 col-xs-7 first-responsive order-0 order-md-1 order-lg-0" style="padding-left: 90px; padding-top: 30px;">
+                            <h3 id="empowering">
+                                <span style="color: white;">SMART HOSTEL</span>
                         </h3>
-                        <div class="service-content1-home" id="display">
+                            <div class="service-content1-home " id="display">
                             <p class="xyz">
                                 Welcome to the future of comfortable and intelligent living <br>
                                 spaces with Shivom Group Smart Hostels. Designed for<br>
@@ -134,6 +147,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
          
@@ -273,10 +287,8 @@
         </div>
     </div>
     <div style="padding-top: 0px">
-
         <div class="bgimg4">
-
-            <div style="text-align: center; padding-top: 10px; font-family:sans-serif; font-size: 4vw; color: white; word-spacing: -2px;">
+            <div style="text-align: center; padding-top: 10px; font-family:sans-serif; font-size: 3vw; color: white; word-spacing: -2px;">
                 <p>
                     <b>You Care for their Future and
                         <br>We Care for your Action</b>
@@ -312,42 +324,42 @@
         <div class="background_text">
 
         <div style="padding-top: 2%">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12" style="text-align: center;">
+        <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
             <p style="font-size: 3vw">
                 <b>Why Us?</b>
             </p>
         </div>
-
-        <div class="col-12 col-md-4 col-sm-4 col-xs-12 text-center">
+        </div>
+        <div class="row text-center">
+            <div class="col-12 col-md-4">
             <div style="padding-top: 10%">
-                <img src="childs_image/Worldclass.png"  width="20%" height="40%"/>
+                    <img src="childs_image/Worldclass.png" class="img-fluid" style="width: 13%; height: auto;"/>
             </div>
-            <p class="quick" style="font-size: 1.7vw; padding-top: 2%">
+                <p class="quick" style="padding-top: 2%">
                 <b>World Class Security Solution</b>
             </p>
             <p class="whyusdata">
                 Through our world-class security solutions, the safety of every child and woman can be assured. Our products are specially designed for child and women safety.
             </p>
         </div>
-
-        <div class="col-12 col-md-4 col-sm-4 col-xs-12 text-center">
+            <div class="col-12 col-md-4">
             <div style="padding-top: 10%">
-                <img src="childs_image/dmsicon.png" width="30%"/>
+                    <img src="childs_image/dmsicon.png" class="img-fluid" style="width: 20%; height: auto;"/>
             </div>
-            <p class="quick" style="font-size: 1.7vw; padding-top: 2%">
+                <p class="quick" style="padding-top: 2%">
                 <b>Digital Management System</b>
             </p>
-            <p class="whyusdata ">
+                <p class="whyusdata">
                 With our smart and advanced digital management system, the entire data of the school can be managed and organized easily and efficiently. Schools can keep records of every student and capture their attendance smartly.
             </p>
         </div>
-
-        <div class="col-12 col-md-4 col-sm-4 col-xs-12 text-center">
+            <div class="col-12 col-md-4">
             <div style="padding-top: 10%">
-                <img src="childs_image/installationicon.png"  width="30%" />
+                    <img src="childs_image/installationicon.png" class="img-fluid" style="width: 20%; height: auto;" />
             </div>
-            <p class="quick" style="font-size: 1.7vw; padding-top: 2%">
+                <p class="quick" style="padding-top: 2%">
                 <b>Quick Installation and Handling</b>
             </p>
             <p class="whyusdata">
@@ -355,6 +367,7 @@
             </p>
         </div>
     </div>
+</div>
 </div>
 
             <div style="padding-top: 0px;">

@@ -292,7 +292,6 @@ $subject='';
     </div>
     <?php echo $error; ?>
 
-
     <form action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="dfe014a7-07a5-466e-802a-2bc28b97b5c1">
     <input type="hidden" name="redirect" value="contact-thankyou-page.html">
@@ -302,7 +301,7 @@ $subject='';
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')" required>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
@@ -314,7 +313,7 @@ $subject='';
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Contact Number" name="contact" required>
+                    <input type="text" class="form-control" placeholder="Enter Contact Number" name="contact" pattern="\d{10}" title="Enter a valid 10-digit contact number" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12">
@@ -340,6 +339,8 @@ $subject='';
         <input type="submit" name="submit" value="Submit" id="button1"/>
     </div>
 </form>
+
+
 
 </div>
     <?php include('footer.php');?>
