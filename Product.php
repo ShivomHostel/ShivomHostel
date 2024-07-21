@@ -18,7 +18,7 @@
         body {
             overflow-x: hidden;
             margin: 0;
-            transition: background-color 0.5s;
+            transition: background-color 0.5s ease-in-out;
         }
 
         ul {
@@ -64,18 +64,36 @@
 
         .container6 {
             position: relative;
+            top: 0;
+            left: 0;
+            flex-shrink: 1;
             height: 80vh;
             background-image: url('childs_image/TREE-BG-01.png');
             background-repeat: no-repeat;
             background-size: 100% 100%;
+            width: 100%;
         }
+
 
         .heading {
             position: absolute;
             top: 20%;
-            left: 5%;
+            left: 10%;
             text-align: start;
             padding: 5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .heading {
+                left: 1%;
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .heading {
+                left: 1%;
+            }
         }
 
         .heading h1 {
@@ -88,27 +106,18 @@
             color: #333;
         }
 
-        .hotel-image {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
+
+        .container1 {
+            width: 100dvw;
+            overflow: hidden;
         }
 
         .car-animation {
             position: absolute;
-            bottom: -3%;
-            left: -20%;
+            bottom: -37%;
             width: 20%;
             height: auto;
             animation: moveCar 20s linear infinite;
-        }
-
-        .hotel5 {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
         }
 
         @keyframes moveCar {
@@ -121,14 +130,13 @@
             }
 
             100% {
-                left: 120%;
+                left: 100%;
             }
         }
 
         .cycle-animation {
             position: absolute;
-            bottom: 2%;
-            left: -20%;
+            bottom: -29%;
             width: 10%;
             height: 18%;
             animation: moveCycle 30s linear infinite;
@@ -247,8 +255,57 @@
                 text-align: center;
             }
         }
-        #myHeader, .shree-group {
+
+        #myHeader,
+        .shree-group {
             background-color: transparent;
+        }
+
+        @media (max-width: 768px) {
+
+            .car-animation,
+            .cycle-animation {
+                width: 15%;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .car-animation,
+            .cycle-animation {
+                width: 10%;
+            }
+        }
+
+        @media only screen and (min-width: 200px) and (max-width: 1025px) {
+            .animation-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hotel-img {
+                margin-top: 200px;
+            }
+
+            .heading {
+                text-align: center;
+            }
+
+            .container6 {
+                background-size: cover;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            .car-animation {
+                bottom: -87%;
+            }
+
+            .cycle-animation {
+                bottom: -90%;
+            }
         }
     </style>
     <!-- Bootstrap CSS V4.5-->
@@ -274,9 +331,9 @@
         </div>
 
         <div class="smart active" id="smart-team-section">
-            <div class="container6 m-0 p-0 color-div" data-color="#E7AC7B">
-                <div class="row">
-                    <div class="heading col-12 col-lg-6 col-xl-6 col-md-6 col-sm-6 text-align:start">
+            <div class="container6 m-0 p-0 color-div" data-color="fff8f3">
+                <div class="row animation-section">
+                    <div class="heading col-12 col-lg-6 col-sm-12 col-xs-12 ">
                         <h1>Ranked#1</h1>
                         <h3>
                             Special S-mart Feature > Totally <br>
@@ -284,18 +341,18 @@
                             Vacant hostel/PG
                         </h3>
                     </div>
-                    <div class="hotel5 col-12 col-lg-6 col-xl-6 col-md-6 col-sm-6 m-0 p-0">
-                        <img src="childs_image/product-hotel.webp" alt="Hotel" class="hotel-image">
-
-                    </div>
+                    <div class="hotel-img col-12 col-lg-6 col-sm-12 col-xs-12 m-0 p-0">
+                        <img src="childs_image/product-hotel.webp" alt="Hotel">
                 </div>
                 <img src="childs_image/car.gif" alt="Car" class="car-animation m-0 p-0">
                 <img src="childs_image/cyclist.gif" alt="cycle" class="cycle-animation m-0 p-0">
             </div>
+            </div>
+            <div class="color-div" data-color="#E7AC7B">
             <div class="d-flex flex-row justify-content-end m-6">
                 <button class="nav-item get-app" onclick="openInNewTab()">Get App</button>
             </div>
-            <div >
+                <div>
                 <p class="text-center pt-5" style="color:#b0751c">---
                     <span class="pg-ow"> How the app can benefit hostel and PG owners</span> ---
                 </p>
@@ -303,7 +360,8 @@
                     Explore our <span style="color:#9e6818">S-mart Features</span>
                 </h2>
             </div>
-            <div class="color-div" data-color="#ffcea6">
+            </div>
+            <div class="color-div" data-color="#E7AC7B">
                 <ul class="flex flex-wrap justify-center pt-5 gap-5">
                     <li class="li-items col-12 col-xl-3 col-lg-3">
                         <div class="text-center">
@@ -424,9 +482,9 @@
             </div>
 
 
-            <div class="scroll-container top-0 m-0 p-0 color-div" data-color="rgb(277,220,170)">
+            <div class="scroll-container top-0 m-0 p-0 color-div" data-color="#b35d59">
                 <div class=" col-12 col-lg-12 scroll-wrapper">
-                    <div class=" scroll-item" style="color:#7B3F00 ">
+                    <div class=" scroll-item" style="color:white ">
 
                         <div class="text-center relative">
                             <div style="padding-left:35%">
@@ -471,7 +529,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\registration.png" alt="Room Seats Management"
@@ -520,7 +578,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\accountant.png" alt="Room Seats Management" class="object-cover"
@@ -568,7 +626,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\team.png" alt="Room Seats Management" class="object-cover"
@@ -615,7 +673,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\multiplebusiness.png" alt="Room Seats Management"
@@ -664,7 +722,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\businessplatform.png" alt="Room Seats Management"
@@ -710,7 +768,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\smartapp.png" alt="Room Seats Management" class="object-cover"
@@ -759,7 +817,7 @@
                     </video>
                 </div>
                 <div class="col-12 col-lg-12 scroll-wrapper ">
-                    <div class="scroll-item" style="color:#7B3F00">
+                    <div class="scroll-item" style="color:white">
                         <div class="text-center relative md:mx-20 my-4">
                             <div style="padding-left:35%">
                                 <img src="childs_image\differentfromothers.png" alt="Room Seats Management"
@@ -808,13 +866,13 @@
             </div>
 
 
-            <div  class="color-div" data-color="rgb(247,220,185)">
-                <h1 class=" ml-5 row justify-content-center pt-2"
-                    style="font-size:22px;color:white; background-color:gray; height: 50px; width:15%; border-radius:10px">
+            <div class="color-div" data-color="#e7ac7b">
+                <h1 class=" ml-5 pl-4 pt-2 pb-3"
+                    style="font-size:22px;color:white; background-color:gray; height: auto; width: 200px;  border-radius:10px">
                     S-mart Features
                 </h1>
-                <div class="container1">
-                    <div class="scroll-content2">
+                <div class=" container1 color-div" data-color="#e7ac7b">
+                    <div class=" scroll-content2">
                         <div class="card">
                             <div class="card-body">
                                 <div class="text-center mb-1 ml-2">
@@ -913,7 +971,7 @@
                                     </svg>
                                 </div>
                                 <h5 class="card-title text-primary text-center">Tenant App</h5>
-                                <p class="text-center" style="font-size: 1rem;">For transparent &  <br>easy records</p>
+                                <p class="text-center" style="font-size: 1rem;">For transparent & <br>easy records</p>
                             </div>
                         </div>
                         <div class="card">
@@ -928,7 +986,8 @@
                                 </div>
                                 <h5 class="card-title text-success text-center">Roles</h5>
                                 <p class="text-center" style="font-size: 1rem;">Manage employee ,<br>Attendance, records
-                                   <br> & roles</p>
+                                    <br> & roles
+                                </p>
                             </div>
                         </div>
                         <div class="card">
@@ -957,7 +1016,8 @@
                                     </svg>
                                 </div>
                                 <h5 class="card-title text-secondary text-center">Calculate</h5>
-                                <p class="text-center" style="font-size: 1rem;">Calculate And Manage<br> electricity bill
+                                <p class="text-center" style="font-size: 1rem;">Calculate And Manage<br> electricity
+                                    bill
                                 </p>
                             </div>
                         </div>
@@ -986,7 +1046,8 @@
                                     </svg>
                                 </div>
                                 <h5 class="card-title text-success text-center">Reminder</h5>
-                                <p class="text-center" style="font-size: 1rem;">Billing, updates & <br>collection reminder
+                                <p class="text-center" style="font-size: 1rem;">Billing, updates & <br>collection
+                                    reminder
                                 </p>
                             </div>
                         </div>
@@ -1017,7 +1078,8 @@
                         <div class="max-w-sm flex items-center justify-center ">
                             <div class="flex shadow-sm ">
                                 <div id="hs-trailing-button-add-on">
-                                    <p class="text-lg pt-3 pl-3 pr-3 text-lg " style="color:orange;">Let's journey begin</p>
+                                    <p class="text-lg pt-3 pl-3 pr-3 text-lg " style="color:orange;">Let's journey begin
+                                    </p>
                                 </div>
                                 <button type="button" data-toggle="modal" data-target="#ContactForm"
                                     class="text-lg pl-3 pr-3"
@@ -1067,7 +1129,7 @@
             </div>
             <div id="ref1">
                 <div class="bg2">
-                    <div class="container1 p-5" style="padding-top: 60px;padding-bottom: 60px">
+                    <div class="container0 p-5" style="padding-top: 60px;padding-bottom: 60px">
                         <div class="row">
 
                             <div class="col-md-5 col-xs-12 col-md-push-7">
@@ -1079,7 +1141,8 @@
 
                             <div class="col-md-7 col-md-pull-5" style="padding-left: 60px">
                                 <div class="service-content">
-                                    <p class="service-heading-content" style="padding-top: 10%;" >S-Trax Device</p>
+                                    <p class="service-heading-content text-center" style="padding-top: 10%;">S-Trax
+                                        Device</p>
                                     <p style="background-color: black;">
                                         S-Trax is a smart, small, and advance tracking device. It has capability to
                                         provide real time tracking of a person on the
@@ -1113,7 +1176,8 @@
 
                             <div class="col-md-7 col-md-pull-5" style="padding-left: 60px">
                                 <div class="service-content">
-                                    <p class="service-heading-content" style="padding-top: 15%;">S-Trax Mobile
+                                    <p class="service-heading-content text-center" style="padding-top: 15%;">S-Trax
+                                        Mobile
                                         Application</p>
                                     <p style="background-color: black">It`s an advance and cool Android/Ios Application
                                         for live tracking of children. Apart from that this amazing
@@ -1166,7 +1230,8 @@
                     </div>
                 </div>
             </div>
-            <div style="background-color: gray" class="bg-white flex flex-col lg:flex-row pt-5 items-center justify-around rounded text-center p-2">
+            <div style="background-color: gray"
+                class="bg-white flex flex-col lg:flex-row pt-5 items-center justify-around rounded text-center p-2">
                 <div class="mb-4 font-bold text-lg">
                     IT'S TIME TO UPGRADE YOUR HOSTEL/PG INTO SMART HOSTEL PG
                     <h6 class="text-lg mb-4">Automate your operations, manage your Hostel/PGs business efficiently,
@@ -1193,7 +1258,7 @@
 
     </div>
 
-    <footer>
+    <footer class="color-div" data-color="gray">
         <div class="footer2" style="width: 100%">
             <div class="bgimg2">
                 <div style="background-color: rgba(8, 8, 8, 1);">
@@ -1232,8 +1297,8 @@
                         </ul>
                     </div>
 
-                    <div class="footer-res row p-3">
-                        <div class="col-12 d-flex flex-wrap justify-content-around">
+                    <div class="row ">
+                        <div class="col-12 pt-4 d-flex flex-wrap justify-content-around">
                             <div class="footer-col col-12 col-lg-3 col-xl-3 col-md-3 col-sm-3">
                                 <div class="rounded mb-2 p-2 d-flex flex-column justify-content-center"
                                     style="background-color:gray">
@@ -1245,16 +1310,16 @@
                                         <img src="childs_image/SHIVOM DREAM EARTH (1).png" alt="Logo 3" class="logo"
                                             id="logo3">
                                     </div>
+
                                     <a href="index.php">
                                         <h1 class="shree-logo"><span class="shivom">SHIVOM </span>
                                             <span style="color: white;">GROUP</span>
                                         </h1>
+                                        </h1>
                                     </a>
                                     <div>
                                         <h1 class="footer-line">One Stop Solutions</h1>
-                                        <button
-                                            style="background-color: #f37d21; border-radius: 10px; padding: 8px; color: white; margin-left: 30px;">Get
-                                            in Touch</button>
+                                        <button class="get-touch">Get in Touch</button>
                                     </div>
                                 </div>
                             </div>
@@ -1270,7 +1335,7 @@
                                 </div>
                                 <div class="footer-item">
                                     <img src="childs_image/footerphone.png" class="footer-icon">
-                                    <p>0755-493-7957, +91-77709-63303<br>91-76979-80782, +91-90742-96461</p>
+                                    <p>0755-493-7957,<br> +91-77709-63303<br>91-76979-80782,<br> +91-90742-96461</p>
                                 </div>
                             </div>
                             <div class="footer-col col-12 col-lg-3 col-xl-3 col-md-3 col-sm-3">
@@ -1306,7 +1371,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-12 col-xl-12 col-md-12 " style="padding-top: 25px;  padding-bottom: 5px;">
+                    <div style="padding-top: 25px;  padding-bottom: 5px;">
                         <p style="text-align:center;   font-size: 1vw;padding-bottom: 0">Copyright © 2024 Shivom
                             Technologies Pvt.Ltd. All rights reserved</p>
                     </div>
@@ -1352,8 +1417,10 @@
         });
     </script> -->
     <script>
-        document.querySelector('.scroll-container').addEventListener('wheel', (evt) => {
+        document.addEventListener('DOMContentLoaded', (event) => {
             const container = document.querySelector('.scroll-container');
+
+            container.addEventListener('wheel', (evt) => {
             const maxScrollLeft = container.scrollWidth - container.clientWidth;
 
             if ((container.scrollLeft === 0 && evt.deltaY < 0) || (container.scrollLeft === maxScrollLeft && evt.deltaY > 0)) {
@@ -1363,7 +1430,31 @@
             container.scrollLeft += evt.deltaY;
         });
 
+            let startX;
+            let startY;
+            let scrollLeft;
+
+            container.addEventListener('touchstart', (evt) => {
+                startX = evt.touches[0].pageX - container.offsetLeft;
+                startY = evt.touches[0].pageY - container.offsetTop;
+                scrollLeft = container.scrollLeft;
+            });
+
+            container.addEventListener('touchmove', (evt) => {
+                evt.preventDefault();
+                const x = evt.touches[0].pageX - container.offsetLeft;
+                const y = evt.touches[0].pageY - container.offsetTop;
+                const deltaX = x - startX;
+                const deltaY = y - startY;
+
+                // If swipe is more vertical than horizontal
+                if (Math.abs(deltaY) > Math.abs(deltaX)) {
+                    container.scrollLeft = scrollLeft - deltaY;
+                }
+            });
+        });
     </script>
+
 
     <script>
         $(document).ready(function () {
