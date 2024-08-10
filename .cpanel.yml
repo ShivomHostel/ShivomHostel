@@ -2,6 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ankit/public_html/
-    - /bin/cp * $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -r childs_images $DEPLOYPATH  # Add this line to copy the images directory
+    - /bin/cp -r . $DEPLOYPATH  # This copies all files and folders in the current directory
