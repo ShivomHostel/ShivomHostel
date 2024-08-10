@@ -277,16 +277,16 @@
                     <div class="flip-card-front">
                     <h1 class="co-founder pt-5 pb-3">Co-Founder</h1>
                     <div class="img">
-                        <img src="childs_image/ankit-01.png" alt="profile" height="200px" width="200px">
+                        <img src="childs_image/coder-img.png" alt="profile" height="200px" width="200px">
                     </div>
                     <div class="founder-info">
-                        <h4 class="pt-3 pb-3">Ankit Mandliya</h4>
+                        <h4 class="pt-3 pb-3">Ankit </h4>
                     </div>
                     </div>
                     <div class="flip-card-back">
                     <div class="content">
                         <p class="pb-5 pl-5 pr-5">
-                            Ankit Mandliya is the co-founder of Shivom Group, an IT company specializing 
+                            Ankit  is the co-founder of Shivom Group, an IT company specializing 
                                             in innovative technology solutions. Under his leadership, Shivom Group
                                             focuses
                                             on delivering cutting-edge software development, IT consulting, and digital
@@ -359,16 +359,16 @@
                                 <div class="flip-card-front">
                                     <h1 class="co-founder pt-5 pb-3">Co-Founder</h1>
                                     <div class="img">
-                                        <img src="childs_image/ankit-01.png" alt="profile" height="200px" width="200px">
+                                        <img src="childs_image/coder-img.png" alt="profile" height="200px" width="200px">
                                     </div>
                                     <div class="founder-info">
-                                        <h4 class="pt-3 pb-3">Ankit Mandliya</h4>
+                                        <h4 class="pt-3 pb-3">Ankit</h4>
                                     </div>
                                 </div>
                                 <div class="flip-card-back">
                                     <div class="content">
                                         <p>
-                                            Ankit Mandliya is the co-founder of Shivom Group, an IT company specializing
+                                            Ankit is the co-founder of Shivom Group, an IT company specializing
                                             in innovative technology solutions. Under his leadership, Shivom Group
                                             focuses
                                             on delivering cutting-edge software development, IT consulting, and digital
@@ -403,10 +403,10 @@
         <div class="main active pt-5" id="production-team-section">
          <div class="profile-card">
             <div class="img">
-                <img src="childs_image\ankit-01.png" alt="profile">
+                <img src="childs_image\coder-img.png" alt="profile">
             </div>
             <div class="caption">
-                <h3>Ankit Mandliya</h3>
+                <h3>Ankit</h3>
                 <p>CTO @ Co-Founder</p>
             </div>
         </div> 

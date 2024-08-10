@@ -188,7 +188,7 @@
                 </div>
                 <div class="col-12 col-lg-12 col-xl-12 col-md-12 " style="padding-top: 25px;  padding-bottom: 5px;">
                     <p style="text-align:center;   font-size: 1vw;padding-bottom: 0">Copyright © 2024 Shivom
-                        Technologies Pvt.Ltd. All rights reserved</p>
+                        Technologies Pvt.Ltd. All rights reserved.</p>
                 </div>
             </div>
         </div>
